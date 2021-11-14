@@ -1,1 +1,1 @@
-# CMPE252_StayRec
+# Rasa Chatbot to perform listings search
