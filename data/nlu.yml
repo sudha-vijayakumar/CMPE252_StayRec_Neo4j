@@ -93,15 +93,20 @@ nlu:
 
 - intent: listings_req
   examples: |
-    - find me a place with 
+    - find me a place  
+    - find me some other place 
+    - i am looking for places 
 
 - intent: listings_pic
   examples: |
     - show me the picture of the listing with 
+    - i would like to see pictures 
+    - can you show me pictures of
 
 - intent: listings_details
   examples: |
     - show me the details of the listing with  
+    - can you give me the details 
 
 - intent: book
   examples: |
@@ -112,3 +117,36 @@ nlu:
   examples: |
     - i would like to cancel booking
     - can i cancel the booking
+
+- intent: book_listing
+  examples: |
+    - can i make a booking?
+
+- intent: give_email
+  examples: |
+   - email:
+
+- intent: check_avail
+  examples: |
+   - is the property available on
+
+- intent: confirm_booking
+  examples: |
+    - I would like to confirm the booking
+    - Please proceed
+
+- intent: issue
+  examples: |
+    - I would like to report about an issue
+
+- intent: explain_issue
+  examples: |
+    - I am facing 
+
+- intent: give_booking_id
+  examples: |
+    - booking id is
+
+- intent: resolve
+  examples: |
+    - when the issue will be resolved?

@@ -22,10 +22,12 @@ from gensim.models.doc2vec import Doc2Vec
 from gensim.parsing.preprocessing import preprocess_string
 
 # Load ML model
-model = Doc2Vec.load('/Users/sudhavijayakumar/Documents/252/chatbot252/data/embeddings/lst_embeddings')
+root = '/Users/sudhavijayakumar/Documents/GitHub/CMPE252_StayRec/data/'
+
+model = Doc2Vec.load(root+'embeddings/lst_embeddings')
 
 # Load dataset to get listings titles
-df = pd.read_csv('/Users/sudhavijayakumar/Documents/252/chatbot252/data/listings.csv.gz', sep=',', usecols = ['listing_url','picture_url','name','description','neighbourhood','property_type','bedrooms','bathrooms','amenities','price','review_scores_rating']) 
+df = pd.read_csv(root+'listings.csv.gz', sep=',', usecols = ['listing_url','picture_url','name','description','neighbourhood','property_type','bedrooms','bathrooms','amenities','price','review_scores_rating']) 
 
 class ActionlistingsDetails(Action):
 
@@ -123,7 +125,7 @@ class ActionlistingsBook(Action):
 			tracker: Tracker,
 			domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-		botResponse = f"Booking confirmed under your account!"
+		botResponse = f"Booking confirmed under your account! Confirmation sent to email."
 		
 		dispatcher.utter_message(text=botResponse)
 
@@ -143,3 +145,36 @@ class ActionlistingsCancel(Action):
 		dispatcher.utter_message(text=botResponse)
 
 		return []
+
+class ActionBookUnder(Action):
+
+	def name(self) -> Text:
+		return "action_book_under_name"
+
+	def run(self, dispatcher: CollectingDispatcher,
+			tracker: Tracker,
+			domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+		userMessage = tracker.latest_message['text']
+	
+		botResponse = "This is your,"+userMessage+" . Please tell me if i can proceed with booking!"
+		
+		dispatcher.utter_message(text=botResponse)
+		return []
+
+class ActionIssueProcessing(Action):
+
+	def name(self) -> Text:
+		return "action_issue_processing"
+
+	def run(self, dispatcher: CollectingDispatcher,
+			tracker: Tracker,
+			domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+		userMessage = tracker.latest_message['text']
+	
+		botResponse = "Your "+userMessage+". We'll work on reported issue and get back!"
+		
+		dispatcher.utter_message(text=botResponse)
+		return []
+

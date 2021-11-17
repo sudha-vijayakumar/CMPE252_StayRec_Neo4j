@@ -1,7 +1,5 @@
 version: "2.0"
-
 stories:
-
 - story: happy path + listings
   steps:
   - intent: greet
@@ -17,11 +15,18 @@ stories:
   - action: action_listings_pics
   - intent: listings_details
   - action: action_listings_details
+  - intent: check_avail
+  - action: utter_avail
+  - intent: book_listing
+  - action: utter_givename
+  - intent: give_email
+  - action: action_book_under_name
+  - intent: confirm_booking
   - action: utter_booking
   - intent: book
   - action: action_book
-
-
+  - intent: goodbye
+  - action: utter_goodbye
 - story: happy path + no listings
   steps:
   - intent: greet
@@ -31,7 +36,6 @@ stories:
   - action: utter_listings
   - intent: deny
   - action: utter_goodbye
-
 - story: sad path 1 + listings
   steps:
   - intent: greet
@@ -47,41 +51,3 @@ stories:
   - intent: listings_req
   - action: action_listings_search
 
-- story: sad path 1 + no listings
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-  - action: utter_listings
-  - intent: deny
-  - action: utter_goodbye
-
-- story: sad path 2 + listings
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_listings
-  - intent: affirm
-  - action: utter_req
-  - intent: listings_req
-  - action: action_listings_search
-
-- story: sad path 2 + no listings
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_listings
-  - intent: deny
-  - action: utter_goodbye
