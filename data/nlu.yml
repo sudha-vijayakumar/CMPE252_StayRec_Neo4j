@@ -1,5 +1,4 @@
 version: "2.0"
-
 nlu:
 - intent: greet
   examples: |
@@ -16,7 +15,6 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
-
 - intent: goodbye
   examples: |
     - good afternoon
@@ -30,7 +28,8 @@ nlu:
     - see you around
     - bye bye
     - see you later
-
+    - thanks!
+    - thanks
 - intent: affirm
   examples: |
     - yes
@@ -39,7 +38,6 @@ nlu:
     - of course
     - that sounds good
     - correct
-
 - intent: deny
   examples: |
     - no
@@ -49,7 +47,6 @@ nlu:
     - don't like that
     - no way
     - not really
-
 - intent: mood_great
   examples: |
     - perfect
@@ -66,7 +63,6 @@ nlu:
     - so so perfect
     - so good
     - so perfect
-
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -83,70 +79,64 @@ nlu:
     - extremly sad
     - so saad
     - so sad
-
 - intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
-
 - intent: listings_req
   examples: |
-    - find me a place  
-    - find me some other place 
-    - i am looking for places 
-
+    - find me a place
+    - find me some other place
+    - i am looking for places
 - intent: listings_pic
   examples: |
-    - show me the picture of the listing with 
-    - i would like to see pictures 
+    - show me the picture of the listing with
+    - i would like to see pictures
     - can you show me pictures of
-
 - intent: listings_details
   examples: |
-    - show me the details of the listing with  
-    - can you give me the details 
-
+    - show me the details of the listing with
+    - can you give me the details
 - intent: book
   examples: |
     - i would like to book
     - can i make a booking
-
 - intent: cancel
   examples: |
     - i would like to cancel booking
-    - can i cancel the booking
-
+    - can i cancel the booking?
 - intent: book_listing
   examples: |
     - can i make a booking?
-
+    - how about booking this one?
 - intent: give_email
   examples: |
-   - email:
-
+    - email:
+    - mail:
 - intent: check_avail
   examples: |
-   - is the property available on
-
+    - is the property available on
+    - is it available for booking
 - intent: confirm_booking
   examples: |
     - I would like to confirm the booking
     - Please proceed
-
 - intent: issue
   examples: |
     - I would like to report about an issue
-
+    - i have an issue to report
 - intent: explain_issue
   examples: |
-    - I am facing 
-
+    - I am facing
+    - i want to explain about
+    - I am facing a dire situation, my booking has been cancelled.
 - intent: give_booking_id
   examples: |
     - booking id is
-
+    - my booking id is
 - intent: resolve
   examples: |
     - when the issue will be resolved?
+    - when can i hear back?

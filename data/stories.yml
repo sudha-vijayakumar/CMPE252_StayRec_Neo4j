@@ -27,7 +27,6 @@ stories:
   - action: action_book
   - intent: goodbye
   - action: utter_goodbye
-
 - story: happy path + no listings
   steps:
   - intent: greet
@@ -37,7 +36,6 @@ stories:
   - action: utter_listings
   - intent: deny
   - action: utter_goodbye
-
 - story: Story from Conversation ID 825d13d751c24c6db69a7312c6877620
   steps:
   - intent: greet
@@ -56,4 +54,62 @@ stories:
   - intent: resolve
   - action: utter_wait
   - intent: deny
+  - action: utter_goodbye
+- story: Story from Conversation ID 864f570253b1460489c06cd193441055
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - action: utter_listings
+  - intent: affirm
+  - action: utter_req
+  - intent: listings_req
+  - action: action_listings_search
+  - intent: listings_pic
+  - action: action_listings_pics
+  - intent: listings_details
+  - action: action_listings_details
+  - intent: check_avail
+  - action: utter_avail
+  - intent: book_listing
+  - action: utter_givename
+  - intent: give_email
+  - action: action_book_under_name
+  - intent: confirm_booking
+  - action: utter_booking
+  - intent: book
+  - action: action_book
+  - intent: deny
+  - action: utter_goodbye
+- story: Story from Conversation ID a6176dcb60ad4eedb2acf2a4eb62d6e1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_more_help
+  - intent: issue
+  - action: utter_explain
+  - intent: explain_issue
+  - action: utter_booking_id
+  - intent: give_booking_id
+  - action: action_issue_processing
+  - intent: resolve
+  - action: utter_wait
+  - intent: deny
+  - action: utter_goodbye
+- story: Story from Conversation ID e0b16c88d8f14845842b8887381da10d
+  steps:
+  - intent: book_listing
+  - action: utter_givename
+  - intent: give_email
+  - action: action_book_under_name
+  - intent: confirm_booking
+  - action: utter_booking
+  - intent: book
+  - action: action_book
+  - intent: goodbye
   - action: utter_goodbye
