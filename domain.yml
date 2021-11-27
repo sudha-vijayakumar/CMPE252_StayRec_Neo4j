@@ -60,7 +60,7 @@ responses:
   utter_goodbye:
   - text: Bye
   utter_iamabot:
-  - text: I am a bot, powered by Rasa. I can find you a good airbnb listing!
+  - text: Hi! I am StayRec, a bot powered by Rasa. I can find you a good airbnb listing!
   utter_listings:
   - text: Do you want me to look for a listings?
   - text: Do you need me to look for a listings?

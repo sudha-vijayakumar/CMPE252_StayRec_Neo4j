@@ -22,7 +22,7 @@ from gensim.models.doc2vec import Doc2Vec
 from gensim.parsing.preprocessing import preprocess_string
 
 # Load ML model
-root = '/Users/sudhavijayakumar/Documents/GitHub/CMPE252_StayRec/data/'
+root = './data/'
 
 model = Doc2Vec.load(root+'embeddings/lst_embeddings')
 
