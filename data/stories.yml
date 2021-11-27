@@ -3,7 +3,7 @@ stories:
 - story: happy path + bookcancel + listings
   steps:
   - intent: greet
-  - action: utter_iamabot
+  - action: utter_greet
   - intent: mood_great
   - action: utter_happy
   - action: utter_listings
@@ -30,9 +30,29 @@ stories:
 - story: happy path + no listings
   steps:
   - intent: greet
-  - action: utter_iamabot
+  - action: utter_greet
   - intent: mood_great
   - action: utter_happy
   - action: utter_listings
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Story from Conversation ID 825d13d751c24c6db69a7312c6877620
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_more_help
+  - intent: issue
+  - action: utter_explain
+  - intent: explain_issue
+  - action: utter_booking_id
+  - intent: give_booking_id
+  - action: action_issue_processing
+  - intent: resolve
+  - action: utter_wait
   - intent: deny
   - action: utter_goodbye

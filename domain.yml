@@ -49,7 +49,7 @@ entities: []
 slots: {}
 responses:
   utter_greet:
-  - text: Hey! How are you?
+  - text: Hey! I'm StayRec. How are you?
   utter_cheer_up:
   - image: https://filmdaily.co/wp-content/uploads/2020/07/dirty-lede.jpg
     text: 'Here is something to cheer you up:'
@@ -60,7 +60,7 @@ responses:
   utter_goodbye:
   - text: Bye
   utter_iamabot:
-  - text: Hi! I am StayRec, a bot powered by Rasa. I can find you a good airbnb listing!
+  - text: Hi! I am StayRec, a bot powered by Rasa. I can find you a good airbnb listing! How are you?
   utter_listings:
   - text: Do you want me to look for a listings?
   - text: Do you need me to look for a listings?
