@@ -1,8 +1,8 @@
-# Rasa Chatbot to perform AIRBNB listings search
+# Rasa Chatbot to perform Airbnb listings search and a booking flow.
 
-Demo.mov 
+Demo: https://www.youtube.com/watch?v=rpEfkagwHGE
 
-Run Instructions:
+**Run Instructions:**
 
 How to train?
 > rasa train 
