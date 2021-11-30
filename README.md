@@ -7,7 +7,8 @@ Demo: https://www.youtube.com/watch?v=rpEfkagwHGE
 **Run Instructions:**
 
 Pre-requisite: (not checking-in files due to large file size > 100MB)
-Create feature vector embeddings,
+
+Create feature vector embeddings using the below jupyter notebook,
 https://github.com/sudha-vijayakumar/CMPE252_StayRec/blob/main/actions/Preprocessing.ipynb
 
 After completing this step, feature vectors will be created under the folder 'data/embeddings/lst_embeddings'.
