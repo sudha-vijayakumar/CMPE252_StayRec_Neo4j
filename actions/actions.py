@@ -42,7 +42,7 @@ class ActionlistingsDetails(Action):
 		# use model to find the listings
 		new_doc = preprocess_string(userMessage)
 		test_doc_vector = model.infer_vector(new_doc)
-		sims = model.dv.most_similar(positive = [test_doc_vector])		
+		sims = model.docvecs.most_similar(positive = [test_doc_vector])		
 		
 		# Get first 5 matches
 		for s in sims[:1]:
@@ -77,7 +77,7 @@ class ActionlistingsSearch(Action):
 		# use model to find the listings
 		new_doc = preprocess_string(userMessage)
 		test_doc_vector = model.infer_vector(new_doc)
-		sims = model.dv.most_similar(positive = [test_doc_vector])		
+		sims = model.docvecs.most_similar(positive = [test_doc_vector])		
 		
 		# Get first 5 matches
 		listingss = [df['listing_url'].iloc[s[0]] for s in sims[:5]]
@@ -101,7 +101,7 @@ class ActionlistingsPics(Action):
 
 		new_doc = preprocess_string(userMessage)
 		test_doc_vector = model.infer_vector(new_doc)
-		sims = model.dv.most_similar(positive = [test_doc_vector])		
+		sims = model.docvecs.most_similar(positive = [test_doc_vector])		
 		
 		listingss = [df['picture_url'].iloc[s[0]] for s in sims[:1]]
 
