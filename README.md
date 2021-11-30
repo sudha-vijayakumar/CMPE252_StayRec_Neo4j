@@ -6,9 +6,14 @@ Demo: https://www.youtube.com/watch?v=rpEfkagwHGE
 
 **Run Instructions:**
 
-Pre-requisite: (not checking-in files due to large file size > 100MB)
+Pre-requisite: 
 
-Create feature vector embeddings using the below jupyter notebook,
+> Runtime: python 3.8.8
+
+> Install using pip - RASA,gensim
+
+> Create feature vector embeddings using the below jupyter notebook,
+(not checking-in files due to large file size > 100MB)
 https://github.com/sudha-vijayakumar/CMPE252_StayRec/blob/main/actions/Preprocessing.ipynb
 
 After completing this step, feature vectors will be created under the folder 'data/embeddings/lst_embeddings'.
