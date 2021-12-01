@@ -28,7 +28,7 @@ Pre-requisite:
 
 > Create feature vector embeddings using the below jupyter notebook,
 (not checking-in files due to large file size > 100MB)
-https://github.com/sudha-vijayakumar/CMPE252_StayRec/blob/main/actions/Preprocessing.ipynb
+python3 createEmbedding.py
 
 After completing this step, feature vectors will be created under the folder 'data/embeddings/lst_embeddings'.
 
