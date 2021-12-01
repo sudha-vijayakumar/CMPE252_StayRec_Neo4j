@@ -6,7 +6,7 @@
 ### Demo
 > https://www.youtube.com/watch?v=rpEfkagwHGE
 
-### **Run Instructions:**
+### **Run Instructions**
 
 #### Pre-requisite 
 
