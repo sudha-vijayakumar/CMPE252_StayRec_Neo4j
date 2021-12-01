@@ -1,12 +1,14 @@
 # Rasa Chatbot to perform Airbnb listings search and a booking flow.
 
-## Conversational flows: https://github.com/sudha-vijayakumar/CMPE252_StayRec/blob/main/Conversational%20flows.pdf
+### Conversational flows 
+> https://github.com/sudha-vijayakumar/CMPE252_StayRec/blob/main/Conversational%20flows.pdf
 
-## Demo: https://www.youtube.com/watch?v=rpEfkagwHGE
+### Demo
+> https://www.youtube.com/watch?v=rpEfkagwHGE
 
-## **Run Instructions:**
+### **Run Instructions:**
 
-### Pre-requisite: 
+#### Pre-requisite: 
 
 **Environment**
 
