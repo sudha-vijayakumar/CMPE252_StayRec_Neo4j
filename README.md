@@ -8,7 +8,7 @@
 
 ### **Run Instructions:**
 
-#### Pre-requisite: 
+#### Pre-requisite 
 
 **Environment**
 
@@ -26,6 +26,8 @@
   
   > Python Path       :         /opt/anaconda3/bin/python
 
+#### HOW TO RUN
+
 **Install dependancies using** 
 > pip install -r requirements.txt 
 
@@ -38,7 +40,7 @@ After completing this step, feature vectors will be created under the folder 'da
 **How to train?**
 > rasa train 
 
-**HOW TO RUN** 
+**RUN RASA** 
 
 **Terminal-1:**
 > rasa shell
