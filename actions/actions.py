@@ -24,7 +24,7 @@ from gensim.parsing.preprocessing import preprocess_string
 # Load ML model
 root = './data/'
 
-model = Doc2Vec.load(root+'embeddings/lst_embeddings')
+model = Doc2Vec.load('/Users/sudhavijayakumar/Documents/CMPE252_StayRec/data/embeddings/lst_embeddings')
 
 # Load dataset to get listings titles
 df = pd.read_csv(root+'listings.csv.gz', sep=',', usecols = ['listing_url','picture_url','name','description','neighbourhood','property_type','bedrooms','bathrooms','amenities','price','review_scores_rating']) 
@@ -173,7 +173,7 @@ class ActionIssueProcessing(Action):
 
 		userMessage = tracker.latest_message['text']
 	
-		botResponse = "Your "+userMessage+". We'll work on reported issue and get back!"
+		botResponse = "Your "+userMessage+". We'll work on reported issue and get back! Tracking id is:xxxx"
 		
 		dispatcher.utter_message(text=botResponse)
 		return []
