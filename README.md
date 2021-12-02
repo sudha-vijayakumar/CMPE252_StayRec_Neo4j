@@ -32,6 +32,9 @@
 > pip install -r requirements.txt 
 
 **Create feature vector embeddings using the below jupyter notebook,
+
+Note: This is going to take around 5-6 minutes .. please reach out to me if you need a demo from me for evaluation.
+
 (not checking-in files due to large file size > 100MB)**
 > python3 createEmbedding.py
 
