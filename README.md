@@ -40,7 +40,7 @@ Note: This is going to take around 5-6 minutes .. please reach out to me if you 
 
 After completing this step, feature vectors will be created under the folder 'data/embeddings/lst_embeddings'.
 
-**How to train?**
+**How to train?** (This step can be skipped as a trained model is included)
 > rasa train 
 
 **RUN RASA** 
